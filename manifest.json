@@ -1,20 +1,26 @@
-﻿{
+{
   "manifest_version": 3,
   "name": "Musical Extension",
-  "version": "1.0",
-  "description": "A Chrome extension for music enhancement.",
-  "permissions": ["tabs", "activeTab"],
+  "version": "1.0.0",
   "action": {
-    "default_popup": "popup.html",
-    "default_icon": "icon.png"
+    "default_popup": "index.html"
   },
+  "permissions": [
+    "tabCapture",
+    "activeTab",
+    "webNavigation"
+  ],
+  "host_permissions": [
+    "*://www.youtube.com/*"
+  ],
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "src/background.ts",
+    "type": "module"
   },
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
-      "js": ["content.js"]
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["src/content.ts"]
     }
   ]
 }
