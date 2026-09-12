@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "generate-icons": "tsx scripts/generate-icons.ts",
+    "package": "npm run build && powershell -Command \"Compress-Archive -Path dist/* -DestinationPath musical-extension.zip -Force\"",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -15,10 +17,14 @@
   "devDependencies": {
     "@crxjs/vite-plugin": "^2.0.0-beta.33",
     "@tailwindcss/vite": "^4.0.0",
+    "@types/pngjs": "^6.0.5",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
     "@vitejs/plugin-react": "^4.0.0",
+    "archiver": "^8.0.0",
+    "pngjs": "^7.0.0",
     "tailwindcss": "^4.0.0",
+    "tsx": "^4.23.13",
     "typescript": "^5.0.0",
     "vite": "^6.0.0"
   }
