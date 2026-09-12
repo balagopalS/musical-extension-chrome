@@ -51,11 +51,16 @@ Not all songs rely on heavy bass drums. Some songs (like Kanye West's *Runaway*)
 - **Repeating Interval (Autocorrelation):** The algorithm slides the recorded beat pattern over itself across speeds between 60 BPM and 180 BPM. The delay interval where the beats line up most frequently indicates the tempo.
 - **Harmonic Correction (Comb Filter):** Rhythms often repeat at double-speed (170 BPM) or half-speed (43 BPM). The algorithm scores both the primary tempo and its harmonic multiples (0.5x and 2x) to ensure it picks the true tempo rather than an octave error.
 
-### Step 4: Finding the Musical Key (Chromagram & Key Matching)
+### Step 4: Key Estimation (Custom Chromagram & Profile Matching)
 1. **12 Musical Pitch Classes:** The algorithm tests frequencies across 5 octaves (MIDI notes 33 to 96, spanning 55 Hz to 2,100 Hz). This covers low bass notes up to high soprano piano keys (such as E6).
 2. **Pitch Energy Profile:** All octaves of each note are folded into the 12 chromatic notes (C, C#, D, D#, E, F, F#, G, G#, A, A#, B). The notes with the highest energy form the song's musical fingerprint.
 3. **Krumhansl-Schmuckler Profile Matching:** Music theory research defines standard templates for how often each note appears in Major and Minor scales. The algorithm compares the song's fingerprint against all 24 possible keys (12 Major and 12 Minor) using Pearson correlation. The key with the highest similarity score is chosen.
 4. **Camelot & Relative Keys:** The detected key is converted to Camelot notation for DJ harmonic mixing (e.g., C# Minor = 12A, E Major = 12B) and derives its relative key.
+
+### Technical Scope & Notes
+- **Key Estimation:** Key detection is implemented via custom chromagram extraction and Krumhansl-Schmuckler tonal profile correlation. It offers a lightweight, dependency-free in-browser estimate suited for client-side audio analysis, rather than a commercial DAW/ML pitch tracker.
+- **Meter Assumption:** The visualizer beat grid uses an assumed standard 4/4 meter (approximate bar counts are derived by dividing estimated beats by 4); it does not attempt automated time-signature or downbeat detection.
+- **Confidence Scoring:** Confidence values reflect empirical heuristic scores (combining comb-filter resonance peaks and Pearson correlation coefficients) rather than statistically calibrated probabilities.
 
 ---
 

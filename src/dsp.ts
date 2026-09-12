@@ -14,9 +14,12 @@ export interface DSPAnalysisResult {
   mode: 'Major' | 'Minor';
   relativeKey: string;
   camelot: string;
+  /** Heuristic score combining comb-filter resonance and tonal correlation (not a statistically calibrated probability) */
   confidence: number;
   beatIntervalMs: number;
+  /** Estimated bars analyzed under the standard 4/4 meter assumption */
   barsAnalyzed: number;
+  /** Assumed meter for visualizer layout ('4/4') */
   timeSignature: string;
   waveformPeaks: number[];
 }
@@ -206,7 +209,7 @@ export function calculateBPM(samples: Float32Array, sampleRate: number): { bpm: 
 /**
  * Calculates Musical Key from audio using Extended 12-Tone Chromagram up to 2100 Hz (C7)
  */
-export function calculateKey(samples: Float32Array, sampleRate: number): { key: string; mode: 'Major' | 'Minor'; camelot: string; confidence: number } {
+export function calculateKey(samples: Float32Array, sampleRate: number): { key: string; mode: 'Major' | 'Minor'; relativeKey: string; camelot: string; confidence: number } {
   const chroma = new Float64Array(12).fill(0);
 
   // Extended MIDI range from MIDI 33 (A1 ~55Hz) to MIDI 96 (C7 ~2093Hz)

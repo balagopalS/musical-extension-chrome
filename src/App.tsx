@@ -257,7 +257,7 @@ function App() {
               )}
               {!isAnalyzing && dspResult && (
                 <div className="w-full mt-2 pt-1 border-t border-[#2e202e] flex items-center justify-between text-[10px] font-mono text-[#a5d0a8]">
-                  <span>Beat Grid: {dspResult.timeSignature || '4/4'} ({dspResult.barsAnalyzed || 2.5} bars)</span>
+                  <span>Grid: ~{dspResult.barsAnalyzed || 2.5} bars (4/4 assumed)</span>
                   <span className="text-[#b7990d]">IBI: {dspResult.beatIntervalMs || 700}ms</span>
                 </div>
               )}
