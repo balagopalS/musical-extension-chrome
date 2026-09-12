@@ -92,3 +92,10 @@ npm run build
 3. Click **Load unpacked**.
 4. Select the `dist/` directory inside this project folder.
 5. Open any YouTube music video and click the extension icon to view real-time analysis.
+
+---
+
+## 5. License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
