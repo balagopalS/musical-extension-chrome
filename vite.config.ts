@@ -20,4 +20,11 @@ export default defineConfig({
     tailwindcss(),
     crx({ manifest }),
   ],
+  build: {
+    rollupOptions: {
+      input: {
+        offscreen: 'offscreen.html',
+      },
+    },
+  },
 })

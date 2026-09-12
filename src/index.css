@@ -1,1 +1,34 @@
 @import "tailwindcss";
+
+html, body {
+  width: 360px;
+  min-height: 520px;
+  margin: 0;
+  padding: 0;
+  background-color: #110b11;
+  color: #f2f4cb;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 360px;
+  min-height: 520px;
+  display: flex;
+  flex-direction: column;
+  background-color: #110b11;
+}
+
+/* Custom scrollbar matching the boutique palette */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #110b11;
+}
+::-webkit-scrollbar-thumb {
+  background: #2e202e;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8cada7;
+}
