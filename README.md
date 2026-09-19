@@ -102,5 +102,6 @@ npm run build
 
 ## 5. License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+Copyright (c) 2026 balagopalS. All rights reserved.  
+This project is proprietary and provided strictly for personal inspection, portfolio evaluation, and academic review. Unauthorized copying, redistribution, publication, or commercial use without prior written permission is strictly prohibited. See the [LICENSE](LICENSE) file for complete terms.
 

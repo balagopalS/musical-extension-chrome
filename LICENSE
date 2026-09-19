@@ -1,21 +1,16 @@
-MIT License
+Copyright (c) 2026 balagopalS. All rights reserved.
 
-Copyright (c) 2026 balagopalS
+This software, its source code, documentation, and all associated media files are the exclusive intellectual property of balagopalS.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+TERMS OF USE:
+1. Permitted Use:
+   You are granted a limited, personal, non-exclusive license to inspect, clone, and run this code locally strictly for personal evaluation, peer review, and portfolio/academic assessment.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+2. Strict Prohibitions:
+   You may NOT:
+   - Copy, reproduce, redistribute, republish, mirror, or sublicense this software or any portion thereof under your own name or any other entity's name.
+   - Claim authorship, inventorship, or ownership of this project or its implementations.
+   - Use this software, algorithms, or any derivative works for commercial purposes, products, paid services, or commercial distributions.
+   - Remove, alter, or obscure any copyright, author attribution, or proprietary notices contained in the codebase.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHOR OR COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
